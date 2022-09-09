@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | IP Address Tracker</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+  integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+  integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+  crossorigin=""></script>
+</head>
+
+<body>
+
+  <!-- IP Address Tracker
+
+  Search for any IP address or domain
+
+  IP Address
+  Location
+  Timezone
+    UTC 
+  ISP -->
+
+  <div class="main-wrapper">
+    <div class="upper">
+      <h3>IP Address Tracker</h3>
+      <form action="">
+        <div class="input_grp">
+          <input type="text" name="" id="ip_input" placeholder="Search for any IP address or domain"/>
+          <button type="submit" id="validateIp">
+            <img src="./images/icon-arrow.svg" width="12px" height="15px" alt="">
+          </button>
+        </div>
+      </form>
+      <div class="ip_info">
+        <div class="ip_add">
+          <span>ip address</span>
+          <span id="ip_update">103.199.200.23</span>
+        </div>
+
+        <div class="ip_location">
+          <span>location</span>
+          <span id="ip_region">Brooklyn,NY 10001</span>
+        </div>
+
+        <div class="ip_timezone">
+          <span>timezone</span>
+          <span id="ip_timezone">UTC-05:00</span>
+        </div>
+
+        <div class="ip_isp">
+          <span>isp</span>
+          <span id="ip_isp">SpaceX Starlink</span>
+        </div>
+
+      </div>
+    </div>
+    <div class="lower">
+      <div id="map"></div>
+    </div>
+  </div>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <!-- <script src="./script.js"></script> -->
+  <script src="./script2.js"></script>
+</body>
+
+</html>
