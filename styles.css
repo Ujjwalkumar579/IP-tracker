@@ -154,8 +154,7 @@ body {
 
 
 
-@media screen and (min-width:375px) and (max-width:786px)
-{
+@media screen and (min-width:375px) and (max-width:786px) {
     .ip_info {
         flex-direction: column;
         gap: 15px;
@@ -163,6 +162,7 @@ body {
         text-align: center;
         top: 140px;
     }
+
     .ip_info> :nth-child(1),
     .ip_info> :nth-child(2),
     .ip_info> :nth-child(3) {
@@ -177,28 +177,28 @@ body {
         gap: 0;
         padding-right: 0px;
     }
-    .input_grp input[type='text']
-    {
+
+    .input_grp input[type='text'] {
         width: 250px;
     }
 
-    .input_grp input::placeholder
-    {
+    .input_grp input::placeholder {
         font-size: 12px;
     }
 
-    .upper form
-    {
-        left: 0px;
+    .upper form {
+        left: -25px;
         position: relative;
         top: -11px;
-    }
-    .ip_info> :nth-child(1)> :nth-child(2),
-.ip_info> :nth-child(2)> :nth-child(2),
-.ip_info> :nth-child(3)> :nth-child(2),
-.ip_info> :nth-child(4)> :nth-child(2) {
-    font-weight: 500;
-    font-size: 17px;
 
-}
+    }
+
+    .ip_info> :nth-child(1)> :nth-child(2),
+    .ip_info> :nth-child(2)> :nth-child(2),
+    .ip_info> :nth-child(3)> :nth-child(2),
+    .ip_info> :nth-child(4)> :nth-child(2) {
+        font-weight: 500;
+        font-size: 17px;
+
+    }
 }
